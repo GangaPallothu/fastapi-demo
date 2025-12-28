@@ -4,12 +4,13 @@ name: Build and Push to GHCR
 on:
   push:
     branches: [ "main" ]
+  # You can add pull_request: if you want to run on PRs too
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
+      packages: write   # required to push to GHCR
       contents: read
 
     steps:

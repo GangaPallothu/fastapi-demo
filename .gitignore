@@ -1,0 +1,10 @@
+# Python / UV
+.venv/
+__pycache__/
+*.pyc
+.cache/
+uv.lock
+# VS Code
+.vscode/
+# Docker artifacts
+*.log
